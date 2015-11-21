@@ -1,0 +1,9 @@
+{
+  "name": "Traveler App",
+  "private": true,
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}

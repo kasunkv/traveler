@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F5F8D7D-0000-49E8-8629-E5157921FFAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96EB2EDC-E80C-4DBD-B4A4-F6AD5ED68B9B}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Traveler", "src\Traveler\Traveler.xproj", "{DF3208D7-C3C1-4236-A38D-F46F51772A72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF3208D7-C3C1-4236-A38D-F46F51772A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3208D7-C3C1-4236-A38D-F46F51772A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3208D7-C3C1-4236-A38D-F46F51772A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3208D7-C3C1-4236-A38D-F46F51772A72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF3208D7-C3C1-4236-A38D-F46F51772A72} = {3F5F8D7D-0000-49E8-8629-E5157921FFAB}
+	EndGlobalSection
+EndGlobal
