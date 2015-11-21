@@ -1,0 +1,30 @@
+h5 {
+    color: #fff;
+}
+
+.user-profile {
+    
+}
+
+.profile-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 5px;
+}
+.profile-name {
+    font-size: 1.2em;
+    padding:10px;
+}
+
+.footer {
+    height: 80px;    
+    background-color: #0c84e4;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-content {
+   
+}
