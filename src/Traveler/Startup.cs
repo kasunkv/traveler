@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Http;
+﻿using Microsoft.AspNet.Builder;
 using Microsoft.Framework.DependencyInjection;
 using Traveler.Services;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Framework.Configuration;
-using Microsoft.Framework.Runtime;
+using Microsoft.Dnx.Runtime;
+using Traveler.Models;
 
 namespace Traveler
 {
     public class Startup
     {
 
-        public static IConfiguration Configuration;
+        public static IConfigurationRoot Configuration;
 
         public Startup(IApplicationEnvironment appEnv) {
 
@@ -26,17 +22,18 @@ namespace Traveler
         }
 
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
-        public void ConfigureServices(IServiceCollection services, IHostingEnvironment env)
+        public void ConfigureServices(IServiceCollection services)
         {
+            // Add Mvc
             services.AddMvc();
 
+            // Add Entity Frameworl
+            services.AddEntityFramework()
+                .AddSqlServer()
+                .AddDbContext<TravelerContext>();
+
             // Setting up dependancy Injection
-            if (env.IsDevelopment()) {
-                services.AddScoped<IMailService, DebugMailService>();
-            } else {
-                //services.AddScoped<IMailService, RealMailService>();
-                services.AddScoped<IMailService, DebugMailService>();
-            }
+            services.AddScoped<IMailService, DebugMailService>();
         }
 
         public void Configure(IApplicationBuilder app)
