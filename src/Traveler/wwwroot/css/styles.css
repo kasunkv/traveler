@@ -1,5 +1,6 @@
 h5 {
     color: #fff;
+    font-weight: lighter;
 }
 
 .user-profile {
@@ -7,14 +8,12 @@ h5 {
 }
 
 .profile-image {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    margin: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
 }
 .profile-name {
-    font-size: 1.2em;
-    padding:10px;
+    font-size: 1.15em;
 }
 
 .footer {
@@ -25,9 +24,9 @@ h5 {
     background-color: #0c84e4;
     text-align: center;
     padding: 20px 0;
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .footer-content {
-   
+   font-size: 1em;
 }

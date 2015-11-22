@@ -8,8 +8,10 @@
 }
 <section id="page-header">
     <div class="row">
-        <h1>Contact Traveler</h1>
-        <p>Drop us a message, We will get back to you.</p>
+        <div class="col-lg-10 col-lg-offset-1">
+            <h1>Contact Traveler</h1>
+            <p>Drop us a message, We will get back to you.</p>
+        </div>
     </div>
 </section>
 <section id="form">
@@ -27,27 +29,27 @@
                     <label for="inputName" class="col-lg-2 control-label">Name</label>
                     <div class="col-lg-4">
                         <input asp-for="Name" type="text" class="form-control" id="inputName" placeholder="Name" />
-                        <span asp-validation-for="Name"></span>
+                        <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-4">
                         <input asp-for="Email" type="email" class="form-control" id="inputEmail" placeholder="Email" />
-                        <span asp-validation-for="Email"></span>
+                        <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
                 </div>                
                 <div class="form-group">
                     <label for="textArea" class="col-lg-2 control-label">Textarea</label>
                     <div class="col-lg-4">
                         <textarea asp-for="Message" class="form-control" rows="3" id="textArea"></textarea>
-                        <span asp-validation-for="Message"></span>
-                        <span class="help-block">Send your message to us.</span>
+                        <span asp-validation-for="Message" class="text-danger"></span>
                     </div>
                 </div>                
                 <div class="form-group">
                     <div class="col-lg-4 col-lg-offset-2">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <a class="btn btn-default" asp-controller="App" asp-action="Index">Cancel</a>
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </div>
                 </div>
             </fieldset>
