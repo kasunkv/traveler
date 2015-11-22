@@ -1,0 +1,72 @@
+﻿<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Traveler | @ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="~/css/bootstrap-paper/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Traveler</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a asp-controller="App" asp-action="Index">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a asp-controller="App" asp-action="About">About</a></li> 
+                        <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="logged-user">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 pull-right">
+                    <div class="user-profile" align="right">
+                        <img src="~/img/profile.png" alt="headshot" class="img img-circle profile-image" />
+                        <span id="username" class="profile-name">Sam Hastings</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer class="footer">
+        <h5 id="footer-content">
+            &copy; 2015 The World Ltd.
+        </h5>
+    </footer>
+
+
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/scripts.js"></script>
+
+    @RenderSection("Scripts", false);
+</body>
+</html>
+
+
+
