@@ -16,7 +16,7 @@ namespace Traveler.Models
         public DbSet<Stop> Stops { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            var connectionString = Startup.Configuration["Data:TravelerContextConnection"];
+            var connectionString = Startup.Configuration["Data:DefaultConnection:ConnectionString"];
             optionsBuilder.UseSqlServer(connectionString);
             base.OnConfiguring(optionsBuilder);
         }
