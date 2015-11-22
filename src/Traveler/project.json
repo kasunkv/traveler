@@ -7,7 +7,10 @@
     "Microsoft.AspNet.Server.WebListener": "1.0.0-beta7",
     "Microsoft.AspNet.StaticFiles": "1.0.0-beta7",
     "Microsoft.AspNet.Mvc": "6.0.0-beta7",
-    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta7"
+    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta7",
+    "Microsoft.Framework.Configuration.Json": "1.0.0-beta7",
+    "EntityFramework.Core": "7.0.0-beta7",
+    "EntityFramework.SqlServer": "7.0.0-beta7"
   },
 
   "commands": {
@@ -15,11 +18,7 @@
   },
 
   "frameworks": {
-    "dnx451": {
-      "dependencies": {
-        "Microsoft.Framework.Configuration.Json": "1.0.0-beta7"
-      }
-    },
+    "dnx451": {},
     "dnxcore50": { }
   },
 
