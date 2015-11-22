@@ -1,5 +1,8 @@
 {
-  "AppSettngs": {
-    "SiteEmailAddress":  "some@email.com"
-  }	
+  "AppSettings": {
+    "SiteEmailAddress": "some@email.com"
+  },
+  "Data": {
+    "TravelerContextConnection":  "Server=(localdb)\\ProjectsV12;Database=TravelerDb;Trusted_Connection=true;MultipleActiveResultSets=true"
+  }
 }
