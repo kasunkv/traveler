@@ -1,6 +1,7 @@
 {
   "AppSettings": {
-    "SiteEmailAddress": "some@email.com"
+    "SiteEmailAddress": "some@email.com",
+    "ThankYouMessage": "Thank You"
   },
   "Data": {
     "DefaultConnection": {

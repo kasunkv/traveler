@@ -39,7 +39,7 @@ namespace Traveler.Controllers.Web
 
                 if (_mailService.SendMail(email, email, $"Contact Request From {model.Name} ({model.Email})", model.Message)) {
                     ModelState.Clear();
-                    ViewBag.Message = "Mail Sent. Thank You.";
+                    ViewBag.Message = Startup.Configuration["AppSettings:ThankYouMessage"];
                 }
             }
             return View();
